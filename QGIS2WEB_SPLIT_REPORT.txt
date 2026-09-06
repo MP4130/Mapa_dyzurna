@@ -1,0 +1,60 @@
+qgis2web GitHub Splitter — raport
+==============================================
+Źródło: C:\Users\Joanna\Desktop\praca\web\index-net\qgis2web_2026_09_04-09_00_10_241037
+Próg dzielenia: 10.00 MB
+Docelowy rozmiar części: 9.00 MB
+
+layers/entitiesL_3.js
+  status: SPLIT
+  rozmiar przed: 143.56 MB
+  feature'y: 198026 -> 198026
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesL_3_init.js: 0.00 MB | feature'y: 0
+    - entitiesL_3_part001.js: 9.00 MB | feature'y: 11664
+    - entitiesL_3_part002.js: 9.00 MB | feature'y: 15928
+    - entitiesL_3_part003.js: 9.00 MB | feature'y: 16887
+    - entitiesL_3_part004.js: 9.00 MB | feature'y: 16861
+    - entitiesL_3_part005.js: 9.00 MB | feature'y: 16895
+    - entitiesL_3_part006.js: 9.00 MB | feature'y: 16869
+    - entitiesL_3_part007.js: 9.00 MB | feature'y: 16859
+    - entitiesL_3_part008.js: 9.00 MB | feature'y: 16862
+    - entitiesL_3_part009.js: 9.00 MB | feature'y: 16863
+    - entitiesL_3_part010.js: 9.00 MB | feature'y: 10391
+    - entitiesL_3_part011.js: 9.00 MB | feature'y: 3254
+    - entitiesL_3_part012.js: 9.00 MB | feature'y: 4782
+    - entitiesL_3_part013.js: 9.00 MB | feature'y: 3615
+    - entitiesL_3_part014.js: 9.00 MB | feature'y: 4517
+    - entitiesL_3_part015.js: 9.00 MB | feature'y: 9767
+    - entitiesL_3_part016.js: 8.59 MB | feature'y: 16012
+
+layers/entitiesL_7.js
+  status: SPLIT
+  rozmiar przed: 31.74 MB
+  feature'y: 17515 -> 17515
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesL_7_init.js: 0.00 MB | feature'y: 0
+    - entitiesL_7_part001.js: 9.00 MB | feature'y: 4295
+    - entitiesL_7_part002.js: 9.00 MB | feature'y: 5189
+    - entitiesL_7_part003.js: 9.00 MB | feature'y: 5071
+    - entitiesL_7_part004.js: 4.75 MB | feature'y: 2960
+
+layers/entitiesP_4.js
+  status: SPLIT
+  rozmiar przed: 21.44 MB
+  feature'y: 40447 -> 40447
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesP_4_init.js: 0.00 MB | feature'y: 0
+    - entitiesP_4_part001.js: 9.00 MB | feature'y: 17522
+    - entitiesP_4_part002.js: 9.00 MB | feature'y: 16651
+    - entitiesP_4_part003.js: 3.44 MB | feature'y: 6274
+
+Pliki przekraczające próg po operacji:
+  brak
+
+Wynik walidacji: OK

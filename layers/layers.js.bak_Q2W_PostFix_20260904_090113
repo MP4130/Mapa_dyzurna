@@ -1,0 +1,661 @@
+var wms_layers = [];
+
+
+        var lyr_google_0 = new ol.layer.Tile({
+            'title': 'google',
+            'opacity': 1.000000,
+            
+            
+            source: new ol.source.XYZ({
+            attributions: ' ',
+                url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
+            })
+        });
+var format_entitiesL_1 = new ol.format.GeoJSON();
+var features_entitiesL_1 = format_entitiesL_1.readFeatures(json_entitiesL_1, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesL_1 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesL_1.addFeatures(features_entitiesL_1);
+var lyr_entitiesL_1 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesL_1,
+maxResolution:1.9603126306583372,
+ 
+                style: style_entitiesL_1,
+                popuplayertitle: 'entitiesL',
+                interactive: true,
+    title: 'entitiesL<br />\
+    <img src="styles/legend/entitiesL_1_0.png" /> #000000<br />\
+    <img src="styles/legend/entitiesL_1_1.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_1_2.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_1_3.png" /> #260000<br />\
+    <img src="styles/legend/entitiesL_1_4.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_1_5.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_1_6.png" /> #545454 | 0.5-0.5<br />\
+    <img src="styles/legend/entitiesL_1_7.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_1_8.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_1_9.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_1_10.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_1_11.png" /> #bf00ff<br />\
+    <img src="styles/legend/entitiesL_1_12.png" /> #bfbfbf<br />\
+    <img src="styles/legend/entitiesL_1_13.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_1_14.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_1_15.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_1_16.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_1_17.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_1_18.png" /> #ff0000 | 2-0.5<br />\
+    <img src="styles/legend/entitiesL_1_19.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_1_20.png" /> #ff7f00<br />\
+    <img src="styles/legend/entitiesL_1_21.png" /> #ff7f00<br />' });
+var format_entitiesP_2 = new ol.format.GeoJSON();
+var features_entitiesP_2 = format_entitiesP_2.readFeatures(json_entitiesP_2, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesP_2 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesP_2.addFeatures(features_entitiesP_2);
+var lyr_entitiesP_2 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesP_2,
+maxResolution:0.14002233076130982,
+ 
+                style: style_entitiesP_2,
+                popuplayertitle: 'entitiesP',
+                interactive: true,
+    title: 'entitiesP<br />\
+    <img src="styles/legend/entitiesP_2_0.png" /> SUUS15_07_T<br />\
+    <img src="styles/legend/entitiesP_2_1.png" /> SUUS17_01_T<br />\
+    <img src="styles/legend/entitiesP_2_2.png" /> SUUS22_01_G<br />\
+    <img src="styles/legend/entitiesP_2_3.png" /> UWWPO_581<br />\
+    <img src="styles/legend/entitiesP_2_4.png" /> SUUS25_W<br />\
+    <img src="styles/legend/entitiesP_2_5.png" /> SUPT<br />\
+    <img src="styles/legend/entitiesP_2_6.png" /> UTTPA_504<br />\
+    <img src="styles/legend/entitiesP_2_7.png" /> KOO<br />\
+    <img src="styles/legend/entitiesP_2_8.png" /> UEEPO_585<br />\
+    <img src="styles/legend/entitiesP_2_9.png" /> UEEPC_705<br />\
+    <img src="styles/legend/entitiesP_2_10.png" /> SUPG_01<br />\
+    <img src="styles/legend/entitiesP_2_11.png" /> UGGPA_506<br />\
+    <img src="styles/legend/entitiesP_2_12.png" /> SHP_4025<br />\
+    <img src="styles/legend/entitiesP_2_13.png" /> _wysokosci amsterdam teren PKP<br />\
+    <img src="styles/legend/entitiesP_2_14.png" /> SUPE<br />\
+    <img src="styles/legend/entitiesP_2_15.png" /> SUUS22_01_E<br />\
+    <img src="styles/legend/entitiesP_2_16.png" /> SUUS22_02_K<br />\
+    <img src="styles/legend/entitiesP_2_17.png" /> ENR<br />\
+    <img src="styles/legend/entitiesP_2_18.png" /> SUUS22_1b_T<br />\
+    <img src="styles/legend/entitiesP_2_19.png" /> EOR<br />\
+    <img src="styles/legend/entitiesP_2_20.png" /> SUPK_01<br />\
+    <img src="styles/legend/entitiesP_2_21.png" /> SUPW_01<br />\
+    <img src="styles/legend/entitiesP_2_22.png" /> SUUS12<br />\
+    <img src="styles/legend/entitiesP_2_23.png" /> ESR<br />\
+    <img src="styles/legend/entitiesP_2_24.png" /> SUPC_01<br />\
+    <img src="styles/legend/entitiesP_2_25.png" /> WSC_4095<br />\
+    <img src="styles/legend/entitiesP_2_26.png" /> SUUS22_01_K<br />\
+    <img src="styles/legend/entitiesP_2_27.png" /> SUUS17_01_E<br />\
+    <img src="styles/legend/entitiesP_2_28.png" /> SRK<br />\
+    <img src="styles/legend/entitiesP_2_29.png" /> SUPE_P_01<br />\
+    <img src="styles/legend/entitiesP_2_30.png" /> SUPT01<br />\
+    <img src="styles/legend/entitiesP_2_31.png" /> UTTPA_506<br />\
+    <img src="styles/legend/entitiesP_2_32.png" /> SMS_4091<br />\
+    <img src="styles/legend/entitiesP_2_33.png" /> SUSM04_01_T<br />\
+    <img src="styles/legend/entitiesP_2_34.png" /> SUPS01_07<br />\
+    <img src="styles/legend/entitiesP_2_35.png" /> UEETA_515<br />\
+    <img src="styles/legend/entitiesP_2_36.png" /> SUUS22_1a_T<br />\
+    <img src="styles/legend/entitiesP_2_37.png" /> SUUS07<br />\
+    <img src="styles/legend/entitiesP_2_38.png" /> SUUS15_3b_E<br />\
+    <img src="styles/legend/entitiesP_2_39.png" /> UKKPA_506<br />\
+    <img src="styles/legend/entitiesP_2_40.png" /> SUUS25_G<br />\
+    <img src="styles/legend/entitiesP_2_41.png" /> UEEPA_510<br />\
+    <img src="styles/legend/entitiesP_2_42.png" /> TW2_4095<br />\
+    <img src="styles/legend/entitiesP_2_43.png" /> SUUS24_02_I<br />\
+    <img src="styles/legend/entitiesP_2_44.png" /> SUPE_01<br />\
+    <img src="styles/legend/entitiesP_2_45.png" /> SUUS22_02_E<br />\
+    <img src="styles/legend/entitiesP_2_46.png" /> SUUS22_1a_E<br />\
+    <img src="styles/legend/entitiesP_2_47.png" /> SUPT_01<br />\
+    <img src="styles/legend/entitiesP_2_48.png" /> UWWPA_506<br />\
+    <img src="styles/legend/entitiesP_2_49.png" /> SUUS05<br />\
+    <img src="styles/legend/entitiesP_2_50.png" /> TOS_4093<br />\
+    <img src="styles/legend/entitiesP_2_51.png" /> SUUS19_01_G<br />\
+    <img src="styles/legend/entitiesP_2_52.png" /> SUUS22_1b_E<br />\
+    <img src="styles/legend/entitiesP_2_53.png" /> SUUS22_01_T<br />\
+    <img src="styles/legend/entitiesP_2_54.png" /> SUUS22_01_W<br />\
+    <img src="styles/legend/entitiesP_2_55.png" /> UGGPO_583<br />' });
+var format_entitiesL_3 = new ol.format.GeoJSON();
+var features_entitiesL_3 = format_entitiesL_3.readFeatures(json_entitiesL_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesL_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesL_3.addFeatures(features_entitiesL_3);
+var lyr_entitiesL_3 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesL_3,
+maxResolution:1.9603126306583372,
+ 
+                style: style_entitiesL_3,
+                popuplayertitle: 'entitiesL',
+                interactive: true,
+    title: 'entitiesL<br />\
+    <img src="styles/legend/entitiesL_3_0.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_3_1.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_3_2.png" /> #0000ff | 0.5-0.25<br />\
+    <img src="styles/legend/entitiesL_3_3.png" /> #0000ff | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_4.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_3_5.png" /> #0000ff | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_6.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_3_7.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_3_8.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_9.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_10.png" /> #545454 | 0.25-0.25-0.25-0.125<br />\
+    <img src="styles/legend/entitiesL_3_11.png" /> #545454 | 0.25-0.25<br />\
+    <img src="styles/legend/entitiesL_3_12.png" /> #545454 | 0.5-0.25<br />\
+    <img src="styles/legend/entitiesL_3_13.png" /> #545454 | 0.5-0.5<br />\
+    <img src="styles/legend/entitiesL_3_14.png" /> #545454 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_15.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_16.png" /> #545454 | 0.25-0.25<br />\
+    <img src="styles/legend/entitiesL_3_17.png" /> #545454 | 0.5-0.25<br />\
+    <img src="styles/legend/entitiesL_3_18.png" /> #545454 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_19.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_20.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_21.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_22.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_23.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_3_24.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_25.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_26.png" /> #7f3f00 | 0.00075-0.00025<br />\
+    <img src="styles/legend/entitiesL_3_27.png" /> #7f3f00 | 0.5-0.25<br />\
+    <img src="styles/legend/entitiesL_3_28.png" /> #7f3f00 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_29.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_30.png" /> #7f3f00 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_31.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_32.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_33.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_34.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_3_35.png" /> #7f7f7f<br />\
+    <img src="styles/legend/entitiesL_3_36.png" /> #7f7f7f | 0.5-0.5<br />\
+    <img src="styles/legend/entitiesL_3_37.png" /> #7f7f7f<br />\
+    <img src="styles/legend/entitiesL_3_38.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_3_39.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_3_40.png" /> #a5a500 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_41.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_3_42.png" /> #a5a500 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_43.png" /> #bf00ff<br />\
+    <img src="styles/legend/entitiesL_3_44.png" /> #bf00ff | 0.5-0.25<br />\
+    <img src="styles/legend/entitiesL_3_45.png" /> #bf00ff | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_46.png" /> #bf00ff<br />\
+    <img src="styles/legend/entitiesL_3_47.png" /> #bf00ff | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_48.png" /> #bfbfbf<br />\
+    <img src="styles/legend/entitiesL_3_49.png" /> #bfbfbf<br />\
+    <img src="styles/legend/entitiesL_3_50.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_51.png" /> #dcdcdc | 0.03125-0.00625-0.00625-0.00625-0.00625-0.00625<br />\
+    <img src="styles/legend/entitiesL_3_52.png" /> #dcdcdc | 11.8736-7.91571<br />\
+    <img src="styles/legend/entitiesL_3_53.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_54.png" /> #dcdcdc | 0.25-0.125<br />\
+    <img src="styles/legend/entitiesL_3_55.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_56.png" /> #dcdcdc | 0.25-0.125<br />\
+    <img src="styles/legend/entitiesL_3_57.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_58.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_59.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_60.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_3_61.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_62.png" /> #ff0000 | 0.25-0.125<br />\
+    <img src="styles/legend/entitiesL_3_63.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_64.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_65.png" /> #ff0000 | 0.25-0.25<br />\
+    <img src="styles/legend/entitiesL_3_66.png" /> #ff0000 | 0.5-0.125<br />\
+    <img src="styles/legend/entitiesL_3_67.png" /> #ff0000 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_68.png" /> #ff0000 | 1-0.5<br />\
+    <img src="styles/legend/entitiesL_3_69.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_70.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_71.png" /> #ff0000 | 0.25-0.25<br />\
+    <img src="styles/legend/entitiesL_3_72.png" /> #ff0000 | 0.5-0.25<br />\
+    <img src="styles/legend/entitiesL_3_73.png" /> #ff0000 | 0-0.25<br />\
+    <img src="styles/legend/entitiesL_3_74.png" /> #ff0000 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_75.png" /> #ff0000 | 250-250<br />\
+    <img src="styles/legend/entitiesL_3_76.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_77.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_78.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_3_79.png" /> #ff7f00<br />\
+    <img src="styles/legend/entitiesL_3_80.png" /> #ff7f00<br />\
+    <img src="styles/legend/entitiesL_3_81.png" /> #ff7f00 | 0.25-0.125<br />\
+    <img src="styles/legend/entitiesL_3_82.png" /> #ff7f00 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_83.png" /> #ff7f00<br />\
+    <img src="styles/legend/entitiesL_3_84.png" /> #ff7f00 | 0.25-0.25<br />\
+    <img src="styles/legend/entitiesL_3_85.png" /> #ff7f00 | 1-0.25<br />\
+    <img src="styles/legend/entitiesL_3_86.png" /> #ff7f00<br />\
+    <img src="styles/legend/entitiesL_3_87.png" /> #ff7f00<br />' });
+var format_entitiesP_4 = new ol.format.GeoJSON();
+var features_entitiesP_4 = format_entitiesP_4.readFeatures(json_entitiesP_4, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesP_4 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesP_4.addFeatures(features_entitiesP_4);
+var lyr_entitiesP_4 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesP_4,
+maxResolution:0.14002233076130982,
+ 
+                style: style_entitiesP_4,
+                popuplayertitle: 'entitiesP',
+                interactive: true,
+    title: 'entitiesP<br />\
+    <img src="styles/legend/entitiesP_4_0.png" /> SUUS25_O<br />\
+    <img src="styles/legend/entitiesP_4_1.png" /> SUOP03_05<br />\
+    <img src="styles/legend/entitiesP_4_2.png" /> Koleje - elektryczny naped rozjazdu<br />\
+    <img src="styles/legend/entitiesP_4_3.png" /> SUUS01<br />\
+    <img src="styles/legend/entitiesP_4_4.png" /> UGGPC_703<br />\
+    <img src="styles/legend/entitiesP_4_5.png" /> UKKPA<br />\
+    <img src="styles/legend/entitiesP_4_6.png" /> UWWPO_581<br />\
+    <img src="styles/legend/entitiesP_4_7.png" /> UXXPO_588<br />\
+    <img src="styles/legend/entitiesP_4_8.png" /> GAZ_LINIE<br />\
+    <img src="styles/legend/entitiesP_4_9.png" /> UTTPA_504<br />\
+    <img src="styles/legend/entitiesP_4_10.png" /> SUPG_01<br />\
+    <img src="styles/legend/entitiesP_4_11.png" /> SUUS24_01_K<br />\
+    <img src="styles/legend/entitiesP_4_12.png" /> SHP_4025<br />\
+    <img src="styles/legend/entitiesP_4_13.png" /> UKKOA<br />\
+    <img src="styles/legend/entitiesP_4_14.png" /> Numery_s�up�w<br />\
+    <img src="styles/legend/entitiesP_4_15.png" /> SUUS22_01_E<br />\
+    <img src="styles/legend/entitiesP_4_16.png" /> SUUS_T<br />\
+    <img src="styles/legend/entitiesP_4_17.png" /> WODOCIAG<br />\
+    <img src="styles/legend/entitiesP_4_18.png" /> SUPK_01<br />\
+    <img src="styles/legend/entitiesP_4_19.png" /> SUUS15_3a_E<br />\
+    <img src="styles/legend/entitiesP_4_20.png" /> D19_Urzadz<br />\
+    <img src="styles/legend/entitiesP_4_21.png" /> SUSM01<br />\
+    <img src="styles/legend/entitiesP_4_22.png" /> UCCPA_510<br />\
+    <img src="styles/legend/entitiesP_4_23.png" /> SUXX_01_T<br />\
+    <img src="styles/legend/entitiesP_4_24.png" /> UGGPA_510<br />\
+    <img src="styles/legend/entitiesP_4_25.png" /> ESR<br />\
+    <img src="styles/legend/entitiesP_4_26.png" /> WSC_4095<br />\
+    <img src="styles/legend/entitiesP_4_27.png" /> SUUS24_01_B<br />\
+    <img src="styles/legend/entitiesP_4_28.png" /> STK_4301<br />\
+    <img src="styles/legend/entitiesP_4_29.png" /> SUUS17_01_E<br />\
+    <img src="styles/legend/entitiesP_4_30.png" /> ENERG_TEKSTY<br />\
+    <img src="styles/legend/entitiesP_4_31.png" /> SUPW<br />\
+    <img src="styles/legend/entitiesP_4_32.png" /> SUUS15_09<br />\
+    <img src="styles/legend/entitiesP_4_33.png" /> UWWPA_507<br />\
+    <img src="styles/legend/entitiesP_4_34.png" /> SUXX_01_G<br />\
+    <img src="styles/legend/entitiesP_4_35.png" /> UWWOO<br />\
+    <img src="styles/legend/entitiesP_4_36.png" /> UEEPA_688<br />\
+    <img src="styles/legend/entitiesP_4_37.png" /> SUPS_O<br />\
+    <img src="styles/legend/entitiesP_4_38.png" /> SUPS01_07<br />\
+    <img src="styles/legend/entitiesP_4_39.png" /> Koleje - s_ swietlny - symbol 5<br />\
+    <img src="styles/legend/entitiesP_4_40.png" /> UKKPA_505<br />\
+    <img src="styles/legend/entitiesP_4_41.png" /> UEEPO<br />\
+    <img src="styles/legend/entitiesP_4_42.png" /> TEL_TEKSTY<br />\
+    <img src="styles/legend/entitiesP_4_43.png" /> SUUS15_T<br />\
+    <img src="styles/legend/entitiesP_4_44.png" /> D19_UZBROJENIE_ENK<br />\
+    <img src="styles/legend/entitiesP_4_45.png" /> SUPE_01<br />\
+    <img src="styles/legend/entitiesP_4_46.png" /> UGGPA_504<br />\
+    <img src="styles/legend/entitiesP_4_47.png" /> SUUS22_02_E<br />\
+    <img src="styles/legend/entitiesP_4_48.png" /> SUBP02_08<br />\
+    <img src="styles/legend/entitiesP_4_49.png" /> SUBP02_07<br />\
+    <img src="styles/legend/entitiesP_4_50.png" /> UTTPA_505<br />\
+    <img src="styles/legend/entitiesP_4_51.png" /> SUUS15_03_E<br />\
+    <img src="styles/legend/entitiesP_4_52.png" /> SUUS22_01_Z<br />\
+    <img src="styles/legend/entitiesP_4_53.png" /> SUUS15_14<br />\
+    <img src="styles/legend/entitiesP_4_54.png" /> SUWH - Hydrant<br />\
+    <img src="styles/legend/entitiesP_4_55.png" /> UKKPO_582<br />\
+    <img src="styles/legend/entitiesP_4_56.png" /> UZBROJENIE_PRZY_TORACH<br />\
+    <img src="styles/legend/entitiesP_4_57.png" /> SUPC_P_01<br />\
+    <img src="styles/legend/entitiesP_4_58.png" /> SUPS01_W<br />\
+    <img src="styles/legend/entitiesP_4_59.png" /> SUUS02<br />\
+    <img src="styles/legend/entitiesP_4_60.png" /> SUPI_01<br />\
+    <img src="styles/legend/entitiesP_4_61.png" /> UGGPA_506<br />\
+    <img src="styles/legend/entitiesP_4_62.png" /> SUUS15_19<br />\
+    <img src="styles/legend/entitiesP_4_63.png" /> SUUS22_1a_W<br />\
+    <img src="styles/legend/entitiesP_4_64.png" /> SUXX_01_W<br />\
+    <img src="styles/legend/entitiesP_4_65.png" /> ENERG_LINIE<br />\
+    <img src="styles/legend/entitiesP_4_66.png" /> SUUS22_02_K<br />\
+    <img src="styles/legend/entitiesP_4_67.png" /> ENR<br />\
+    <img src="styles/legend/entitiesP_4_68.png" /> SUW_O<br />\
+    <img src="styles/legend/entitiesP_4_69.png" /> KANAL_PUNKTY<br />\
+    <img src="styles/legend/entitiesP_4_70.png" /> SUPW_O<br />\
+    <img src="styles/legend/entitiesP_4_71.png" /> SUXU - Urzadzenie techniczne - opis<br />\
+    <img src="styles/legend/entitiesP_4_72.png" /> D19_Uzbrojenie<br />\
+    <img src="styles/legend/entitiesP_4_73.png" /> SUBP02_03<br />\
+    <img src="styles/legend/entitiesP_4_74.png" /> SUUS15_K - Studzienka okragla - przewod kanalizacyjny<br />\
+    <img src="styles/legend/entitiesP_4_75.png" /> SUK_O<br />\
+    <img src="styles/legend/entitiesP_4_76.png" /> UEEPA_506<br />\
+    <img src="styles/legend/entitiesP_4_77.png" /> UGGPO_583<br />\
+    <img src="styles/legend/entitiesP_4_78.png" /> SUUS22_02_W<br />\
+    <img src="styles/legend/entitiesP_4_79.png" /> UEETA_516<br />\
+    <img src="styles/legend/entitiesP_4_80.png" /> SUPS01_K - Punkt o okreslonej wysokosci urzadzenia<br />\
+    <img src="styles/legend/entitiesP_4_81.png" /> SUPE_P_01<br />\
+    <img src="styles/legend/entitiesP_4_82.png" /> SUUS19_02_E<br />\
+    <img src="styles/legend/entitiesP_4_83.png" /> KZUDP_05_12_21 - t<br />\
+    <img src="styles/legend/entitiesP_4_84.png" /> SUGW - Zasuwa lub zawor<br />\
+    <img src="styles/legend/entitiesP_4_85.png" /> 0<br />\
+    <img src="styles/legend/entitiesP_4_86.png" /> SUUS28<br />\
+    <img src="styles/legend/entitiesP_4_87.png" /> SUUS22_01_C<br />\
+    <img src="styles/legend/entitiesP_4_88.png" /> SUPW_E - Wlaz kwadratowy<br />\
+    <img src="styles/legend/entitiesP_4_89.png" /> SUXX_01_K<br />\
+    <img src="styles/legend/entitiesP_4_90.png" /> UTTOA<br />\
+    <img src="styles/legend/entitiesP_4_91.png" /> SUUS22_01_I<br />\
+    <img src="styles/legend/entitiesP_4_92.png" /> SUE<br />\
+    <img src="styles/legend/entitiesP_4_93.png" /> UEEPA_510<br />\
+    <img src="styles/legend/entitiesP_4_94.png" /> SUPS01_03<br />\
+    <img src="styles/legend/entitiesP_4_95.png" /> SUUS13<br />\
+    <img src="styles/legend/entitiesP_4_96.png" /> SUC_O<br />\
+    <img src="styles/legend/entitiesP_4_97.png" /> SUUS31_01<br />\
+    <img src="styles/legend/entitiesP_4_98.png" /> SUPG_P_01<br />\
+    <img src="styles/legend/entitiesP_4_99.png" /> SUUS24_02_I<br />\
+    <img src="styles/legend/entitiesP_4_100.png" /> SUUS22_O<br />\
+    <img src="styles/legend/entitiesP_4_101.png" /> SUES - Szafa elektroenergetyczna lub kontener<br />\
+    <img src="styles/legend/entitiesP_4_102.png" /> SUE_O<br />\
+    <img src="styles/legend/entitiesP_4_103.png" /> SUPW_K - Wlaz - opis<br />\
+    <img src="styles/legend/entitiesP_4_104.png" /> SUPS01_05<br />\
+    <img src="styles/legend/entitiesP_4_105.png" /> SUUS05<br />\
+    <img src="styles/legend/entitiesP_4_106.png" /> SUUS_W<br />\
+    <img src="styles/legend/entitiesP_4_107.png" /> SUUS19_01_G<br />\
+    <img src="styles/legend/entitiesP_4_108.png" /> TOS_4093<br />\
+    <img src="styles/legend/entitiesP_4_109.png" /> SUPS01_E<br />\
+    <img src="styles/legend/entitiesP_4_110.png" /> UWWPB_601<br />\
+    <img src="styles/legend/entitiesP_4_111.png" /> SUUS22_1b_E<br />\
+    <img src="styles/legend/entitiesP_4_112.png" /> SUBP02_02<br />\
+    <img src="styles/legend/entitiesP_4_113.png" /> UCCPO_584<br />\
+    <img src="styles/legend/entitiesP_4_114.png" /> SUUS15_03<br />\
+    <img src="styles/legend/entitiesP_4_115.png" /> SUUS15_07_T<br />\
+    <img src="styles/legend/entitiesP_4_116.png" /> SUUS22_01_B<br />\
+    <img src="styles/legend/entitiesP_4_117.png" /> UCCPB_564<br />\
+    <img src="styles/legend/entitiesP_4_118.png" /> SKOTT_430<br />\
+    <img src="styles/legend/entitiesP_4_119.png" /> SUOP03_10<br />\
+    <img src="styles/legend/entitiesP_4_120.png" /> SUPS01_K<br />\
+    <img src="styles/legend/entitiesP_4_121.png" /> SUP_O<br />\
+    <img src="styles/legend/entitiesP_4_122.png" /> SUUS25_W<br />\
+    <img src="styles/legend/entitiesP_4_123.png" /> SUUS24_01_I<br />\
+    <img src="styles/legend/entitiesP_4_124.png" /> SUPT<br />\
+    <img src="styles/legend/entitiesP_4_125.png" /> UEEPA_505<br />\
+    <img src="styles/legend/entitiesP_4_126.png" /> SUPS<br />\
+    <img src="styles/legend/entitiesP_4_127.png" /> D19_UZBROJENIE_TKM<br />\
+    <img src="styles/legend/entitiesP_4_128.png" /> SUPE<br />\
+    <img src="styles/legend/entitiesP_4_129.png" /> SUPN - Podpora przewodow naziemnych<br />\
+    <img src="styles/legend/entitiesP_4_130.png" /> studnia_kanalizacyjna<br />\
+    <img src="styles/legend/entitiesP_4_131.png" /> KOR<br />\
+    <img src="styles/legend/entitiesP_4_132.png" /> SUUS22_1b_T<br />\
+    <img src="styles/legend/entitiesP_4_133.png" /> SUK<br />\
+    <img src="styles/legend/entitiesP_4_134.png" /> SUPT_O<br />\
+    <img src="styles/legend/entitiesP_4_135.png" /> EOR<br />\
+    <img src="styles/legend/entitiesP_4_136.png" /> szafa_energetyczna<br />\
+    <img src="styles/legend/entitiesP_4_137.png" /> SUPI_P_01<br />\
+    <img src="styles/legend/entitiesP_4_138.png" /> TOD_4094<br />\
+    <img src="styles/legend/entitiesP_4_139.png" /> SUPS01_08<br />\
+    <img src="styles/legend/entitiesP_4_140.png" /> SUUS12<br />\
+    <img src="styles/legend/entitiesP_4_141.png" /> SUUS22_02_B<br />\
+    <img src="styles/legend/entitiesP_4_142.png" /> SUBP02_05<br />\
+    <img src="styles/legend/entitiesP_4_143.png" /> SUUS17_01_I<br />\
+    <img src="styles/legend/entitiesP_4_144.png" /> UXXPA_506<br />\
+    <img src="styles/legend/entitiesP_4_145.png" /> SUPW_P_01<br />\
+    <img src="styles/legend/entitiesP_4_146.png" /> SUPS01_02<br />\
+    <img src="styles/legend/entitiesP_4_147.png" /> SUXX_01_Z<br />\
+    <img src="styles/legend/entitiesP_4_148.png" /> UWWOA<br />\
+    <img src="styles/legend/entitiesP_4_149.png" /> SUPK_P_01<br />\
+    <img src="styles/legend/entitiesP_4_150.png" /> SUOP05_02<br />\
+    <img src="styles/legend/entitiesP_4_151.png" /> SMS_4091<br />\
+    <img src="styles/legend/entitiesP_4_152.png" /> SUUS_E<br />\
+    <img src="styles/legend/entitiesP_4_153.png" /> SUUS22_1a_T<br />\
+    <img src="styles/legend/entitiesP_4_154.png" /> SUUS15_3b_E<br />\
+    <img src="styles/legend/entitiesP_4_155.png" /> ZMIANY<br />\
+    <img src="styles/legend/entitiesP_4_156.png" /> ENERGETYKA<br />\
+    <img src="styles/legend/entitiesP_4_157.png" /> UTTPO_586<br />\
+    <img src="styles/legend/entitiesP_4_158.png" /> SUXX_01_E<br />\
+    <img src="styles/legend/entitiesP_4_159.png" /> SUUS25_G<br />\
+    <img src="styles/legend/entitiesP_4_160.png" /> SUUS22_02_Z<br />\
+    <img src="styles/legend/entitiesP_4_161.png" /> SUL_O<br />\
+    <img src="styles/legend/entitiesP_4_162.png" /> SUUS29_01<br />\
+    <img src="styles/legend/entitiesP_4_163.png" /> Koleje - urzadzenie srk - opis<br />\
+    <img src="styles/legend/entitiesP_4_164.png" /> SUPZ_01<br />\
+    <img src="styles/legend/entitiesP_4_165.png" /> SUUS24_01_Z<br />\
+    <img src="styles/legend/entitiesP_4_166.png" /> SUBP05<br />\
+    <img src="styles/legend/entitiesP_4_167.png" /> SUUS25_E<br />\
+    <img src="styles/legend/entitiesP_4_168.png" /> SUUS22_1a_E<br />\
+    <img src="styles/legend/entitiesP_4_169.png" /> UKKPB_602<br />\
+    <img src="styles/legend/entitiesP_4_170.png" /> D19_UZBROJENIE_SRK<br />\
+    <img src="styles/legend/entitiesP_4_171.png" /> SUUS22_1b_W<br />\
+    <img src="styles/legend/entitiesP_4_172.png" /> SUPT_01<br />\
+    <img src="styles/legend/entitiesP_4_173.png" /> SI_TEKSTY<br />\
+    <img src="styles/legend/entitiesP_4_174.png" /> UWWPA_506<br />\
+    <img src="styles/legend/entitiesP_4_175.png" /> KANALIZACJA<br />\
+    <img src="styles/legend/entitiesP_4_176.png" /> WSC_4302<br />\
+    <img src="styles/legend/entitiesP_4_177.png" /> SUUS15_W<br />\
+    <img src="styles/legend/entitiesP_4_178.png" /> UEETA_518<br />\
+    <img src="styles/legend/entitiesP_4_179.png" /> SUUS_O<br />\
+    <img src="styles/legend/entitiesP_4_180.png" /> SUUS22_01_W<br />\
+    <img src="styles/legend/entitiesP_4_181.png" /> SUPK_P_02<br />\
+    <img src="styles/legend/entitiesP_4_182.png" /> SUUS17_01_T<br />\
+    <img src="styles/legend/entitiesP_4_183.png" /> UKKPA_504<br />\
+    <img src="styles/legend/entitiesP_4_184.png" /> SUUS26_C<br />\
+    <img src="styles/legend/entitiesP_4_185.png" /> UEEPO_585<br />\
+    <img src="styles/legend/entitiesP_4_186.png" /> GAZ_TEKSTY<br />\
+    <img src="styles/legend/entitiesP_4_187.png" /> UWWPC_701<br />\
+    <img src="styles/legend/entitiesP_4_188.png" /> SUUS22_02_C<br />\
+    <img src="styles/legend/entitiesP_4_189.png" /> SUPE_P_02<br />\
+    <img src="styles/legend/entitiesP_4_190.png" /> SUPS01_T<br />\
+    <img src="styles/legend/entitiesP_4_191.png" /> SUUS25_C<br />\
+    <img src="styles/legend/entitiesP_4_192.png" /> SUUS09<br />\
+    <img src="styles/legend/entitiesP_4_193.png" /> SUUS15_04_G<br />\
+    <img src="styles/legend/entitiesP_4_194.png" /> SUUS22_1a_Z<br />\
+    <img src="styles/legend/entitiesP_4_195.png" /> SUUS25_I<br />\
+    <img src="styles/legend/entitiesP_4_196.png" /> SUUS22_02_T<br />\
+    <img src="styles/legend/entitiesP_4_197.png" /> SUPK<br />\
+    <img src="styles/legend/entitiesP_4_198.png" /> SUPW_01<br />\
+    <img src="styles/legend/entitiesP_4_199.png" /> SUUS22_01_K<br />\
+    <img src="styles/legend/entitiesP_4_200.png" /> SUPC_01<br />\
+    <img src="styles/legend/entitiesP_4_201.png" /> SUUS26_G<br />\
+    <img src="styles/legend/entitiesP_4_202.png" /> KANAL_TEKSTY<br />\
+    <img src="styles/legend/entitiesP_4_203.png" /> SUUS25_Z<br />\
+    <img src="styles/legend/entitiesP_4_204.png" /> SUUS_K<br />\
+    <img src="styles/legend/entitiesP_4_205.png" /> UKKPA_509<br />\
+    <img src="styles/legend/entitiesP_4_206.png" /> SUSM04_01_T<br />\
+    <img src="styles/legend/entitiesP_4_207.png" /> KZUDP_05_12_21 - e<br />\
+    <img src="styles/legend/entitiesP_4_208.png" /> UEETA_515<br />\
+    <img src="styles/legend/entitiesP_4_209.png" /> SUPK_02<br />\
+    <img src="styles/legend/entitiesP_4_210.png" /> SUUS07<br />\
+    <img src="styles/legend/entitiesP_4_211.png" /> SUSM04_01_E<br />\
+    <img src="styles/legend/entitiesP_4_212.png" /> UKKPB_662<br />\
+    <img src="styles/legend/entitiesP_4_213.png" /> UKKPA_506<br />\
+    <img src="styles/legend/entitiesP_4_214.png" /> SUPK_O<br />\
+    <img src="styles/legend/entitiesP_4_215.png" /> TW2_4095<br />\
+    <img src="styles/legend/entitiesP_4_216.png" /> STO_4302<br />\
+    <img src="styles/legend/entitiesP_4_217.png" /> SUUS22_02_I<br />\
+    <img src="styles/legend/entitiesP_4_218.png" /> SUPE_O<br />\
+    <img src="styles/legend/entitiesP_4_219.png" /> SUPC_P_02<br />\
+    <img src="styles/legend/entitiesP_4_220.png" /> SUPE02<br />\
+    <img src="styles/legend/entitiesP_4_221.png" /> SUPT_P_01<br />\
+    <img src="styles/legend/entitiesP_4_222.png" /> UGGPA_507<br />\
+    <img src="styles/legend/entitiesP_4_223.png" /> KZUDP_09_12_19 - t<br />\
+    <img src="styles/legend/entitiesP_4_224.png" /> UWWPA_513<br />\
+    <img src="styles/legend/entitiesP_4_225.png" /> WODA_TEKSTY<br />\
+    <img src="styles/legend/entitiesP_4_226.png" /> KANAL_LINIE<br />\
+    <img src="styles/legend/entitiesP_4_227.png" /> SUWW - Zasuwa lub zawor - opis<br />\
+    <img src="styles/legend/entitiesP_4_228.png" /> UWWPA_505<br />\
+    <img src="styles/legend/entitiesP_4_229.png" /> SUUS22_01_T<br />\
+    <img src="styles/legend/entitiesP_4_230.png" /> SUUS22_1a_K<br />\
+    <img src="styles/legend/entitiesP_4_231.png" /> WYK_4101<br />\
+    <img src="styles/legend/entitiesP_4_232.png" /> SUUZ_Z<br />\
+    <img src="styles/legend/entitiesP_4_233.png" /> PEC_TEKSTY<br />' });
+var format_entitiesL_5 = new ol.format.GeoJSON();
+var features_entitiesL_5 = format_entitiesL_5.readFeatures(json_entitiesL_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesL_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesL_5.addFeatures(features_entitiesL_5);
+var lyr_entitiesL_5 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesL_5,
+maxResolution:1.9603126306583372,
+ 
+                style: style_entitiesL_5,
+                popuplayertitle: 'entitiesL',
+                interactive: true,
+    title: 'entitiesL<br />\
+    <img src="styles/legend/entitiesL_5_0.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_5_1.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_5_2.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_5_3.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_5_4.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_5_5.png" /> #bfbfbf<br />\
+    <img src="styles/legend/entitiesL_5_6.png" /> #bfbfbf<br />\
+    <img src="styles/legend/entitiesL_5_7.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_5_8.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_5_9.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_5_10.png" /> #ff7f00<br />' });
+var format_entitiesP_6 = new ol.format.GeoJSON();
+var features_entitiesP_6 = format_entitiesP_6.readFeatures(json_entitiesP_6, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesP_6 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesP_6.addFeatures(features_entitiesP_6);
+var lyr_entitiesP_6 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesP_6,
+maxResolution:0.14002233076130982,
+ 
+                style: style_entitiesP_6,
+                popuplayertitle: 'entitiesP',
+                interactive: true,
+    title: 'entitiesP<br />\
+    <img src="styles/legend/entitiesP_6_0.png" /> SUE_O<br />\
+    <img src="styles/legend/entitiesP_6_1.png" /> 0<br />\
+    <img src="styles/legend/entitiesP_6_2.png" /> D19_UZBROJENIE_SRK<br />\
+    <img src="styles/legend/entitiesP_6_3.png" /> SUPS_O<br />\
+    <img src="styles/legend/entitiesP_6_4.png" /> SUS_O<br />\
+    <img src="styles/legend/entitiesP_6_5.png" /> SUG_O<br />\
+    <img src="styles/legend/entitiesP_6_6.png" /> SUK_O<br />\
+    <img src="styles/legend/entitiesP_6_7.png" /> SUT_O<br />' });
+var format_entitiesL_7 = new ol.format.GeoJSON();
+var features_entitiesL_7 = format_entitiesL_7.readFeatures(json_entitiesL_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesL_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesL_7.addFeatures(features_entitiesL_7);
+var lyr_entitiesL_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesL_7,
+maxResolution:1.9603126306583372,
+ 
+                style: style_entitiesL_7,
+                popuplayertitle: 'entitiesL',
+                interactive: true,
+    title: 'entitiesL<br />\
+    <img src="styles/legend/entitiesL_7_0.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_7_1.png" /> #0000ff<br />\
+    <img src="styles/legend/entitiesL_7_2.png" /> #00ffff<br />\
+    <img src="styles/legend/entitiesL_7_3.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_4.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_5.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_6.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_7.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_8.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_9.png" /> #545454<br />\
+    <img src="styles/legend/entitiesL_7_10.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_7_11.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_7_12.png" /> #7f3f00 | 1.5-0.5<br />\
+    <img src="styles/legend/entitiesL_7_13.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_7_14.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_7_15.png" /> #7f3f00<br />\
+    <img src="styles/legend/entitiesL_7_16.png" /> #989898<br />\
+    <img src="styles/legend/entitiesL_7_17.png" /> #a5a500<br />\
+    <img src="styles/legend/entitiesL_7_18.png" /> #bf00ff<br />\
+    <img src="styles/legend/entitiesL_7_19.png" /> #bfbfbf<br />\
+    <img src="styles/legend/entitiesL_7_20.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_7_21.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_7_22.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_7_23.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_7_24.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_7_25.png" /> #dcdcdc<br />\
+    <img src="styles/legend/entitiesL_7_26.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_7_27.png" /> #ff0000 | 1.5-0.5<br />\
+    <img src="styles/legend/entitiesL_7_28.png" /> #ff0000<br />\
+    <img src="styles/legend/entitiesL_7_29.png" /> #ff7f00<br />' });
+var format_entitiesP_8 = new ol.format.GeoJSON();
+var features_entitiesP_8 = format_entitiesP_8.readFeatures(json_entitiesP_8, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_entitiesP_8 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_entitiesP_8.addFeatures(features_entitiesP_8);
+var lyr_entitiesP_8 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_entitiesP_8,
+maxResolution:0.14002233076130982,
+ 
+                style: style_entitiesP_8,
+                popuplayertitle: 'entitiesP',
+                interactive: true,
+    title: 'entitiesP<br />\
+    <img src="styles/legend/entitiesP_8_0.png" /> 0<br />\
+    <img src="styles/legend/entitiesP_8_1.png" /> dren kamienny<br />\
+    <img src="styles/legend/entitiesP_8_2.png" /> 00__OBIEKTY NIE OBJETE OPERATEM<br />\
+    <img src="styles/legend/entitiesP_8_3.png" /> PP$$O<br />\
+    <img src="styles/legend/entitiesP_8_4.png" /> SUPS_O<br />\
+    <img src="styles/legend/entitiesP_8_5.png" /> SUPG_O<br />\
+    <img src="styles/legend/entitiesP_8_6.png" /> PPUZO<br />\
+    <img src="styles/legend/entitiesP_8_7.png" /> SUTP_O<br />\
+    <img src="styles/legend/entitiesP_8_8.png" /> SUP_O<br />\
+    <img src="styles/legend/entitiesP_8_9.png" /> SUK<br />\
+    <img src="styles/legend/entitiesP_8_10.png" /> 0170_12_2025_POMIAR_ES_EN_KONTYNUACJA_DO_0365_11<br />\
+    <img src="styles/legend/entitiesP_8_11.png" /> SUW_O<br />\
+    <img src="styles/legend/entitiesP_8_12.png" /> SUK_O<br />\
+    <img src="styles/legend/entitiesP_8_13.png" /> SUG_O<br />\
+    <img src="styles/legend/entitiesP_8_14.png" /> D19_UZBROJENIE_SRK<br />\
+    <img src="styles/legend/entitiesP_8_15.png" /> PPUZP<br />\
+    <img src="styles/legend/entitiesP_8_16.png" /> SUPE_O<br />\
+    <img src="styles/legend/entitiesP_8_17.png" /> D19_UZBROJENIE_KKR<br />\
+    <img src="styles/legend/entitiesP_8_18.png" /> D19_UZBROJENIE_ENK<br />\
+    <img src="styles/legend/entitiesP_8_19.png" /> SUPW_O<br />\
+    <img src="styles/legend/entitiesP_8_20.png" /> 0 Opis rur oslonowych<br />\
+    <img src="styles/legend/entitiesP_8_21.png" /> SUC_O<br />\
+    <img src="styles/legend/entitiesP_8_22.png" /> SUE_O<br />\
+    <img src="styles/legend/entitiesP_8_23.png" /> SUL<br />\
+    <img src="styles/legend/entitiesP_8_24.png" /> SUT_O<br />' });
+var group_pomiarynowychobiektw = new ol.layer.Group({
+                                layers: [lyr_entitiesL_7,lyr_entitiesP_8,],
+                                fold: 'close',
+                                title: 'pomiary nowych obiektów'});
+var group_pomiaryistniejcychobiektw = new ol.layer.Group({
+                                layers: [lyr_entitiesL_5,lyr_entitiesP_6,],
+                                fold: 'close',
+                                title: 'pomiary istniejących obiektów'});
+var group_Katowiceszara = new ol.layer.Group({
+                                layers: [lyr_entitiesL_3,lyr_entitiesP_4,],
+                                fold: 'close',
+                                title: 'Katowice szara'});
+var group_Katowiceszara2 = new ol.layer.Group({
+                                layers: [lyr_entitiesL_1,lyr_entitiesP_2,],
+                                fold: 'close',
+                                title: 'Katowice szara 2'});
+
+lyr_google_0.setVisible(true);lyr_entitiesL_1.setVisible(true);lyr_entitiesP_2.setVisible(true);lyr_entitiesL_3.setVisible(true);lyr_entitiesP_4.setVisible(true);lyr_entitiesL_5.setVisible(true);lyr_entitiesP_6.setVisible(true);lyr_entitiesL_7.setVisible(true);lyr_entitiesP_8.setVisible(true);
+var layersList = [lyr_google_0,group_Katowiceszara2,group_Katowiceszara,group_pomiaryistniejcychobiektw,group_pomiarynowychobiektw];
+lyr_entitiesL_1.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesP_2.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesL_3.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesP_4.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesL_5.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesP_6.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesL_7.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesP_8.set('fieldAliases', {'fid': 'fid', 'Layer': 'Layer', 'PaperSpace': 'PaperSpace', 'SubClasses': 'SubClasses', 'Linetype': 'Linetype', 'EntityHandle': 'EntityHandle', 'Text': 'Text', 'ogr_style': 'ogr_style', 'font': 'font', 'angle': 'angle', 'size': 'size', 'size_u': 'size_u', 'anchor': 'anchor', 'color': 'color', 'underline': 'underline', 'plaintext': 'plaintext', 'fcolor': 'fcolor', 'flnum': 'flnum', 'bold': 'bold', 'italic': 'italic', 'dx': 'dx', 'dx_u': 'dx_u', 'dy': 'dy', 'dy_u': 'dy_u', });
+lyr_entitiesL_1.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesP_2.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesL_3.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesP_4.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesL_5.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesP_6.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesL_7.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesP_8.set('fieldImages', {'fid': '', 'Layer': '', 'PaperSpace': '', 'SubClasses': '', 'Linetype': '', 'EntityHandle': '', 'Text': '', 'ogr_style': '', 'font': '', 'angle': '', 'size': '', 'size_u': '', 'anchor': '', 'color': '', 'underline': '', 'plaintext': '', 'fcolor': '', 'flnum': '', 'bold': '', 'italic': '', 'dx': '', 'dx_u': '', 'dy': '', 'dy_u': '', });
+lyr_entitiesL_1.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesP_2.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesL_3.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesP_4.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesL_5.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesP_6.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesL_7.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesP_8.set('fieldLabels', {'fid': 'no label', 'Layer': 'no label', 'PaperSpace': 'no label', 'SubClasses': 'no label', 'Linetype': 'no label', 'EntityHandle': 'no label', 'Text': 'no label', 'ogr_style': 'no label', 'font': 'no label', 'angle': 'no label', 'size': 'no label', 'size_u': 'no label', 'anchor': 'no label', 'color': 'no label', 'underline': 'no label', 'plaintext': 'no label', 'fcolor': 'no label', 'flnum': 'no label', 'bold': 'no label', 'italic': 'no label', 'dx': 'no label', 'dx_u': 'no label', 'dy': 'no label', 'dy_u': 'no label', });
+lyr_entitiesP_8.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});

@@ -1,0 +1,19 @@
+KOREKTA CRS — EPSG:2177
+========================
+
+Repo bazowe:
+qgis2web_2026_09_04_GITHUB_READY_MIGRATED_FINAL.zip
+
+Wykonano:
+- dodano proj4.js i definicję EPSG:2177 identyczną jak w repo 08.28,
+- zarejestrowano EPSG:2177 w OpenLayers,
+- widok mapy ustawiono na EPSG:2177,
+- wszystkie 9 warstw GeoJSON jest wczytywanych z EPSG:4326 do EPSG:2177,
+- zachowano startowy fit do warstwy akt. 26.09.04,
+- zachowano OSM jako domyślnie wyłączony,
+- zachowano Google jako domyślnie włączony,
+- nie zmieniano migracji obiektów, symboliki, kolejności warstw ani zakresów widoczności.
+
+Efekt:
+zielona geometria akt. 26.09.04 oraz pozostałe wektory są wyświetlane
+w układzie PL-2000 strefa 6, tak jak w repo z 28.08.

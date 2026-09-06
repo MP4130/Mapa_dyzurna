@@ -1,0 +1,54 @@
+RAPORT MIGRACJI qgis2web — 2026-09-04
+================================================
+
+Repo docelowe: qgis2web_2026_09_04-09_00_10_241037_GITHUB_READY.zip
+Repo referencyjne: mapa_0828.zip
+Źródło selekcji: USUNIETE.geojson
+
+MIGRACJA OBIEKTÓW
+- Wybrane obiekty: 391
+- Potwierdzone 1:1 w repo 08.28 przed migracją: 391/391
+- Duplikaty już obecne w repo 09.04 (kontrola przed migracją): 0
+- Duplikaty w USUNIETE.geojson: 0
+- Wstawione: 391
+
+ROZDZIAŁ NA WARSTWY DOCELOWE
+- Katowice szara / linie -> entitiesL_3: 299
+- Katowice szara / punkty/opisy -> entitiesP_4: 7
+- pomiary nowych obiektów / linie -> entitiesL_7: 54
+- pomiary nowych obiektów / punkty/opisy -> entitiesP_8: 31
+
+LICZBY FEATURE'ÓW PRZED / PO
+- entitiesL_3: 198026 -> 198325 (+299)
+- entitiesP_4: 40447 -> 40454 (+7)
+- entitiesL_7: 17515 -> 17569 (+54)
+- entitiesP_8: 15777 -> 15808 (+31)
+
+SYMBOLIKA
+- Zachowano oryginalne properties: Layer, ogr_style, color, Text/plaintext, angle, size, anchor, dx/dy itd.
+- Usunięto wyłącznie techniczne pola _DIFF_* przed wstrzyknięciem.
+- Linie wymagające fallbacku PEN, bo ich ogr_style zniknął z nowego renderera: 48 (6 wariantów).
+- Fallback działa tylko dla obiektu, dla którego bazowy renderer qgis2web zwraca brak stylu.
+- Wszystkie migrowane punkty/opisy mają odpowiadającą kategorię Layer w rendererze docelowym.
+  * 20 x PEN(c:#4c2600,w:0.18g)
+  * 17 x PEN(c:#4c2600)
+  * 7 x PEN(c:#4c2600,w:0.2g)
+  * 2 x PEN(c:#260000,w:0.35g)
+  * 1 x PEN(c:#ff0000,w:0.8g)
+  * 1 x PEN(c:#000000,w:0.18g)
+
+POZOSTAŁE ZMIANY
+- Dodano zielony wektor: akt. 26.09.04.
+- Geometria i zielona symbolika zostały skopiowane z warstwy aktualizacji repo 08.28.
+- Dodano OpenStreetMap z tile.openstreetmap.org.
+- OpenStreetMap: domyślnie WYŁĄCZONY; google: pozostaje WŁĄCZONY.
+- Widok startowy: automatyczny fit do extentu akt. 26.09.04.
+- Istniejące zakresy widoczności i pozostała struktura nowego repo zostały zachowane.
+
+KONTROLA KOŃCOWA
+- Mapowanie grup i L/P: OK
+- 391 obiektów rozdzielonych do 4 właściwych warstw: OK
+- OSM OFF: OK
+- akt. 26.09.04 ON: OK
+- Startowy extent z akt. 26.09.04: OK
+- Referencje green data/style w index.html: OK
