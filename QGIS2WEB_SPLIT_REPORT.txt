@@ -1,0 +1,73 @@
+qgis2web GitHub Splitter — raport
+==============================================
+Źródło: E:\dyzurna_katowice\261105\7_GITHUB\qgis2web_2026_11_08-20_28_22_979449
+Próg dzielenia: 10.00 MB
+Docelowy rozmiar części: 9.00 MB
+
+layers/entitiesL_4.js
+  status: SPLIT
+  rozmiar przed: 150.50 MB
+  feature'y: 186873 -> 186873
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesL_4_init.js: 0.00 MB | feature'y: 0
+    - entitiesL_4_part001.js: 9.00 MB | feature'y: 11639
+    - entitiesL_4_part002.js: 9.00 MB | feature'y: 14748
+    - entitiesL_4_part003.js: 9.00 MB | feature'y: 15006
+    - entitiesL_4_part004.js: 9.00 MB | feature'y: 14986
+    - entitiesL_4_part005.js: 9.00 MB | feature'y: 15008
+    - entitiesL_4_part006.js: 9.00 MB | feature'y: 14992
+    - entitiesL_4_part007.js: 9.00 MB | feature'y: 14988
+    - entitiesL_4_part008.js: 9.00 MB | feature'y: 14984
+    - entitiesL_4_part009.js: 9.00 MB | feature'y: 14987
+    - entitiesL_4_part010.js: 9.00 MB | feature'y: 14988
+    - entitiesL_4_part011.js: 9.00 MB | feature'y: 8778
+    - entitiesL_4_part012.js: 9.00 MB | feature'y: 2683
+    - entitiesL_4_part013.js: 9.00 MB | feature'y: 4622
+    - entitiesL_4_part014.js: 9.00 MB | feature'y: 3218
+    - entitiesL_4_part015.js: 9.00 MB | feature'y: 4096
+    - entitiesL_4_part016.js: 9.00 MB | feature'y: 6928
+    - entitiesL_4_part017.js: 6.17 MB | feature'y: 10222
+
+layers/entitiesL_6.js
+  status: SPLIT
+  rozmiar przed: 40.09 MB
+  feature'y: 19958 -> 19958
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesL_6_init.js: 0.00 MB | feature'y: 0
+    - entitiesL_6_part001.js: 9.00 MB | feature'y: 3893
+    - entitiesL_6_part002.js: 9.00 MB | feature'y: 4605
+    - entitiesL_6_part003.js: 9.00 MB | feature'y: 4406
+    - entitiesL_6_part004.js: 9.00 MB | feature'y: 4850
+    - entitiesL_6_part005.js: 4.05 MB | feature'y: 2204
+
+layers/entitiesP_5.js
+  status: SPLIT
+  rozmiar przed: 24.10 MB
+  feature'y: 40191 -> 40191
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesP_5_init.js: 0.00 MB | feature'y: 0
+    - entitiesP_5_part001.js: 9.00 MB | feature'y: 15638
+    - entitiesP_5_part002.js: 9.00 MB | feature'y: 14867
+    - entitiesP_5_part003.js: 6.03 MB | feature'y: 9686
+
+layers/entitiesP_7.js
+  status: SPLIT
+  rozmiar przed: 11.09 MB
+  feature'y: 18420 -> 18420
+  SHA-256 1:1: OK
+  index.html: OK
+  pliki:
+    - entitiesP_7_init.js: 0.00 MB | feature'y: 0
+    - entitiesP_7_part001.js: 9.00 MB | feature'y: 14994
+    - entitiesP_7_part002.js: 2.06 MB | feature'y: 3426
+
+Pliki przekraczające próg po operacji:
+  brak
+
+Wynik walidacji: OK
